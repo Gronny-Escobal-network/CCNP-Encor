@@ -1,4 +1,4 @@
 # Diagramas de OSPF
 
 ## Topología básica
-![Topología OSPF](./diagram.png)
+![Topología OSPF](./OSPF_Interarea_Summarization.png)
