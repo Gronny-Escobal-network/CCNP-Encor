@@ -1,5 +1,5 @@
-# Lab 1: Basic OSPF
+# Lab 1: OSPF Interarea Route Summarization
 
 Topology used:
 
-![Lab 1 Topology](../diagrams/OSPF_Interarea_Summarization.png)
+![Lab 1 Topology](../Diagrams/OSPF_Interarea_Summarization.png)
