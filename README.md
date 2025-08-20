@@ -26,7 +26,7 @@ Currently studying **OSPF**, including:
 - Initial configuration and verification commands.  
 - Topology diagrams for labs.  
 
-👉 Check the [`OSPF`](./Advanced_OSPF) folder for notes and practice labs.
+👉 Check the [`Advanced OSPF`](./Advanced_OSPF) folder for notes and practice labs.
 
 ---
 
