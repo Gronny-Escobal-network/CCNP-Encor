@@ -1,43 +1,42 @@
 # 📘 CCNP ENCOR (350-401)
 
-Este repositorio contiene mis apuntes, configuraciones, laboratorios y diagramas para la certificación **CCNP Enterprise Core (ENCOR 350-401)**.  
-Está organizado según el temario oficial de Cisco y lo utilizo como mi cuaderno digital de estudio.
+This repository contains my notes, configurations, labs, and diagrams for the **CCNP Enterprise Core (ENCOR 350-401)** certification.  
+It is organized according to the official Cisco exam blueprint and serves as my digital notebook for study and practice.
 
 ---
 
-## 🎯 Objetivo
-- Documentar mi preparación para el examen **ENCOR 350-401**.  
-- Organizar teoría, comandos, laboratorios y diagramas en un solo lugar.  
-- Practicar GitHub mientras estudio.
+## 🎯 Goals
+- Document my preparation for the **ENCOR 350-401** exam.  
+- Keep theory, commands, labs, and diagrams well organized in one place.  
+- Improve my GitHub workflow while studying.  
 
 ---
 
-## 🗂️ Estructura del Repositorio
+## 🗂️ Repository Structure
 
-- **OSPF/** → Teoría, configuraciones, laboratorios y diagramas de OSPF.  
-- (Más adelante se incluirán: BGP, VLANs, QoS, Seguridad, etc.)
-
----
-
-## 📖 Progreso Actual
-Actualmente estoy estudiando **OSPF**, incluyendo:  
-- Conceptos básicos y tipos de routers.  
-- Estructura de áreas (Backbone, Stub, NSSA).  
-- Configuración inicial y comandos de verificación.  
-- Diagramas de topología para los laboratorios.  
-
-👉 Mira la carpeta [`OSPF`](./OSPF) para ver la teoría y prácticas.
+- **OSPF/** → Notes, configurations, labs, and diagrams for OSPF.  
+- *(More topics will be added later: BGP, VLANs, QoS, Security, Automation, etc.)*  
 
 ---
 
-## 🚀 Próximos pasos
-- Subir laboratorios básicos de OSPF.  
-- Continuar con BGP y servicios de infraestructura.  
-- Agregar ejemplos de troubleshooting.  
+## 📖 Current Progress
+Currently studying **OSPF**, including:  
+- Basic concepts and router types.  
+- Area design (Backbone, Stub, NSSA).  
+- Initial configuration and verification commands.  
+- Topology diagrams for labs.  
+
+👉 Check the [`OSPF`](./OSPF) folder for notes and practice labs.
 
 ---
 
-## ✍️ Autor
-**Gronny Escobal**  
-Estudiante autodidacta de redes y seguridad.  
-Preparando la certificación **CCNP ENCOR (350-401)**. 
+## 🚀 Next Steps
+- Upload basic OSPF labs.  
+- Continue with BGP and Infrastructure Services.  
+- Add troubleshooting examples.  
+
+---
+
+## ✍️ Author
+**Gronny Escobal**   
+Preparing for the **CCNP ENCOR (350-401)** certification.  
