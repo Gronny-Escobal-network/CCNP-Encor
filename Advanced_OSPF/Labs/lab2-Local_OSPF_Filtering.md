@@ -17,7 +17,7 @@ The `distribute-list` command is the primary tool for local route filtering in O
 
 ## 💻 Configuration
 
-### **R2** (Area 0)
+### **Z2** (Area 0)
 
 This example shows how to filter the `192.168.200.200` route so it isn't installed in R2's routing table.
 
@@ -36,7 +36,7 @@ end
 
 -----
 
-### **R11** (Area 1)
+### **Z11** (Area 1)
 
 This router's configuration shows how to advertise the `192.168.200.200` network in OSPF Area 1.
 
