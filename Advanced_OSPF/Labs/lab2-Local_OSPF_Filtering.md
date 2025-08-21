@@ -1,6 +1,6 @@
-# 🔹 Lab X – OSPF Configuration & Validation
-## Configuration
-### 🖥️ **Z2** (Area 0)
+# 🔹 Lab 2 – OSPF Configuration & Validation
+## ⚙️ Configuration
+### 🔀 **Z2** (Area 0)
 ```bash
 configure terminal
 !
@@ -14,7 +14,7 @@ router ospf 100
 end
 ```
 
-### 🖥️ **Z11** (Area 1)
+### 🔀 **Z11** (Area 1)
 
 This router's configuration shows how to advertise the `192.168.200.200` network in OSPF Area 1.
 
