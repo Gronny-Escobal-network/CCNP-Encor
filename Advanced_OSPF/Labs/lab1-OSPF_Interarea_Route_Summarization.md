@@ -14,7 +14,7 @@
 
 ## Configuration
 
-### R1 (Area 12 networks)
+### Q24 (Area 12 networks)
     router ospf 1
      router-id 192.168.1.1
      network 172.16.1.0 0.0.0.255 area 12
@@ -22,32 +22,32 @@
      network 172.16.3.0 0.0.0.255 area 12
      network 10.12.0.0 0.0.255.255 area 12
 
-### R2 (ABR performing summarization)
+### Q8 (ABR performing summarization)
     router ospf 1
      router-id 192.168.2.2
      area 12 range 172.16.0.0 255.255.0.0 cost 45
      network 10.12.0.0 0.0.255.255 area 12
      network 10.23.0.0 0.0.255.255 area 0
 
-### R3 (Backbone Area 0)
+### Z4 (Backbone Area 0)
     router ospf 1
      router-id 192.168.3.3
      network 10.23.0.0 0.0.255.255 area 0
 
 ## Verification
 
-### Before summarization (on R3)
-    R3# show ip route ospf
+### Before summarization (on Z4)
+    Z4# show ip route ospf
       O IA 172.16.1.0/24 [110/3] via 10.23.1.2
       O IA 172.16.2.0/24 [110/3] via 10.23.1.2
       O IA 172.16.3.0/24 [110/3] via 10.23.1.2
 
-### After summarization (on R3)
-    R3# show ip route ospf
+### After summarization (on Z4)
+    Z4# show ip route ospf
       O IA 172.16.0.0/16 [110/46] via 10.23.1.2
 
-### Discard (summary) route on ABR (R2)
-    R2# show ip route ospf
+### Discard (summary) route on ABR (Q8)
+    Q8# show ip route ospf
       O 172.16.0.0/16 is a summary, Null0
 
 ## Key Points
