@@ -1,5 +1,5 @@
 # 🔹 Lab 1 – OSPF Configuration & Validation
-## Configuration
+## ⚙️ Configuration
 ### 🔀 **Q242** (Area 12)
 ```bash
 router ospf 1
