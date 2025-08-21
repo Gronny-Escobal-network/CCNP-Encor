@@ -26,12 +26,20 @@ router ospf 100
 
 ## 🔍 Validation
 
-✅ Before (on Z21)
+✅ Before (on Z5)
 ```bash
+Z5#sh ip route 192.168.200.200 255.255.255.0 longer-prefixes
+Gateway of last resort is 11.0.0.2 to network 0.0.0.0
+
+      192.168.200.0/32 is subnetted, 1 subnets
+O IA     192.168.200.200 [110/22] via 11.0.0.2, 00:01:11, GigabitEthernet0/0
 
 ```
 ✅ After summarization (on Z11)
 ```bash
+Z5#sh ip route 192.168.200.200 255.255.255.0 longer-prefixes
+
+Gateway of last resort is 11.0.0.2 to network 0.0.0.0
 
 ```
 
