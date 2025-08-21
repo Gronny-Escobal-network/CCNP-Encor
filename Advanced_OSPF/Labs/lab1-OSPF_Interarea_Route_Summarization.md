@@ -49,7 +49,7 @@ Q8# show ip route ospf
 
 -----
 
-## 🗺️ Topology
+## 🖧 Topology
 
 ![Lab 1 Topology](../Diagrams/OSPF_Interarea_Summarization.png)
 
