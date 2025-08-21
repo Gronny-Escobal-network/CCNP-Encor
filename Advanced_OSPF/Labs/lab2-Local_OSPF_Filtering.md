@@ -35,7 +35,17 @@ router ospf 100
 -----
 
 ## 🔍 Validation
-✅
+✅ Before Distribute List (Z2)
+```bash
+Z2(config-router)#do sh ip route 192.168.200.200 lo
+      192.168.200.0/32 is subnetted, 1 subnets
+O IA     192.168.200.200 [110/23] via 10.0.123.2, 00:00:19, GigabitEthernet0/0
+```
+✅ After Distribute List (Z2)
+```bash
+Z2(config-router)#do sh ip route 192.168.200.200 lo
+(blank)
+```
 
 -----
 
