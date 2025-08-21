@@ -36,6 +36,7 @@ router ospf 100
 
 ## 🔍 Validation
 ✅
+
 -----
 
 ## 🗺️ Topology
