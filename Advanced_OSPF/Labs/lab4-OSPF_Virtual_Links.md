@@ -27,6 +27,6 @@
 
 ## 🖧 Topology
 
-![Lab 1 Topology](../Diagrams/prefix.png)
+![Lab 1 Topology](../Diagrams/virtual.png)
 
 -----
