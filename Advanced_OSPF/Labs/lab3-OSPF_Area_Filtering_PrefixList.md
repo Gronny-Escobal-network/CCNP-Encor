@@ -35,7 +35,7 @@ Gateway of last resort is 11.0.0.2 to network 0.0.0.0
 O IA     192.168.200.200 [110/22] via 11.0.0.2, 00:01:11, GigabitEthernet0/0
 
 ```
-✅ After summarization (on Z11)
+✅ After summarization (on Z5)
 ```bash
 Z5#sh ip route 192.168.200.200 255.255.255.0 longer-prefixes
 
