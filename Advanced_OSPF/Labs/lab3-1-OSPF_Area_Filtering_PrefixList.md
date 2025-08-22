@@ -52,4 +52,4 @@ O IA     10.10.78.78/32 [110/22] via 12.0.0.2, 00:57:08, Ethernet0/0
 
 ## 🖧 Topology
 
-![Lab 1 Topology](../Diagrams/prefix.png)
+![Lab 1 Topology](../Diagrams/prefix2.png)
