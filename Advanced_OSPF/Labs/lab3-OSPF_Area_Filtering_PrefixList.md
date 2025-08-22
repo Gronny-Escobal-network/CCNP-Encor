@@ -1,4 +1,4 @@
-# 🔹 Lab X – OSPF Configuration & Validation
+# 🔹 Lab 3 – OSPF Configuration & Validation
 ## ⚙️ Configuration
 ### 🔀 **Z21** (Area 12)
 ```bash
