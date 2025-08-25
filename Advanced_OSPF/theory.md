@@ -40,3 +40,70 @@
 - Example: **Traffic Engineering (OSPF-TE)**, bandwidth information, and custom applications.
 - **Type 8**: external attributes (OSPFv2).
 - **Types 9, 10, 11**: different scopes for custom purposes.
+
+-----
+## Stub Area
+👉Blocks external LSAs (type 5).
+
+👉Gets a default route from the ABR.
+
+👉Reduces routing table size.
+On all routers in the area:
+```bash
+router ospf 100
+ area 10 stub
+```
+On the ABR:
+```bash
+router ospf 100
+ area 10 stub
+```
+
+## Totally Stubby Area (Cisco Proprietary)
+👉Blocks external LSAs (type 5) and inter-area summaries (type 3).
+
+👉Only keeps intra-area routes and one default route.
+On the ABR:
+```bash
+router ospf 100
+ area 10 stub no-summary
+```
+On the internal routers:
+```bash
+router ospf 100
+ area 10 stub
+```
+
+## NSSA (Not-So-Stubby Area)
+👉Blocks external LSAs (type 5).
+
+👉Allows an ASBR inside the area to inject external routes as type 7 LSAs.
+
+👉ABR translates LSA type 7 into type 5.
+On all routers in the area:
+```bash
+router ospf 100
+ area 10 nssa
+```
+If an ASBR inside the NSSA redistributes routes:
+```bash
+router ospf 100
+ area 10 nssa
+ redistribute connected subnets
+```
+✅The ABR will translate LSA type 7 into type 5.
+
+## Totally NSSA
+👉Same as NSSA but also blocks inter-area summaries (type 3).
+
+👉Only gets a default route, intra-area routes, and translated externals.
+On the ABR:
+```bash
+router ospf 100
+ area 10 nssa no-summary
+```
+On the internal routers:
+```bash
+router ospf 100
+ area 10 nssa
+```
