@@ -5,13 +5,13 @@ We have a problem because I cannot see the all the routes, the reason is that BG
 ```bash
 interface Ethernet0/2
  ip address 10.0.23.60 255.255.255.0
- ip ospf 100 area 0
+ ip ospf 100 area 0               <----
 !
 interface Ethernet0/3
  ip address 10.0.12.60 255.255.255.0
 !
-router ospf 100
- router-id 60.60.60.60
+router ospf 100                 <----
+ router-id 60.60.60.60          <----
 !
 router bgp 65201
  bgp router-id 60.60.60.60
@@ -19,16 +19,26 @@ router bgp 65201
  network 60.60.60.60 mask 255.255.255.255
  neighbor 10.0.12.61 remote-as 65200
  neighbor 10.0.23.64 remote-as 65201
- neighbor 10.0.34.63 remote-as 65201
+ neighbor 10.0.34.63 remote-as 65201         <----
 ```
 ### 🔀 **R64** 
 ```bash
 interface GigabitEthernet0/0
  ip address 10.0.23.64 255.255.255.0
- ip ospf 100 area 0
+ ip ospf 100 area 0            <----
  duplex auto
  speed auto
  media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 10.0.34.64 255.255.255.0
+ ip ospf 100 area 0               <----
+ duplex auto
+ speed auto
+ media-type rj45
+!
+router ospf 100                  <----       
+ router-id 63.63.63.63            <----
 !
 router bgp 65201
  bgp router-id 64.64.64.64
@@ -41,10 +51,10 @@ router bgp 65201
 ```bash
 interface Ethernet0/1
  ip address 10.0.34.63 255.255.255.0
- ip ospf 100 area 0
+ ip ospf 100 area 0                   <----
 !
-router ospf 100
- router-id 63.63.63.63
+router ospf 100                   <----
+ router-id 63.63.63.63            <----
 !
 router bgp 65201
  bgp router-id 63.63.63.63
@@ -52,7 +62,7 @@ router bgp 65201
  network 63.63.63.63 mask 255.255.255.255
  neighbor 10.0.23.60 remote-as 65201
  neighbor 10.0.34.64 remote-as 65201
- neighbor 10.0.45.62 remote-as 65202
+ neighbor 10.0.45.62 remote-as 65202           <----
 ```
 
 -----
