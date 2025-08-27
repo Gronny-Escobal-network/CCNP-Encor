@@ -28,11 +28,7 @@ router bgp 65200
 
 ## 🔍 Validation
 
-✅ Before (on Z21)
-```bash
-
-```
-✅ After (on Z11)
+✅ After 
 ```bash
 R1# show bgp ipv4 unicast summary
 BGP router identifier 192.168.2.2, local AS number 65200
