@@ -107,7 +107,7 @@ R60#sh ip bgp
 
 ## 🖧 Topology
 
-![Lab 1 Topology](../Diagrams/bgp.png)
+![Lab 1 Topology](../Diagrams/Screenshot_3.png)
 
 -----
 
