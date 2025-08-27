@@ -37,7 +37,7 @@ router bgp 65201
  neighbor 192.168.110.64 next-hop-self
  neighbor 192.168.117.61 remote-as 65200
 ```
-### 🔀 **Z11** 
+### 🔀 **R63** 
 
 ```bash
 interface Loopback63
