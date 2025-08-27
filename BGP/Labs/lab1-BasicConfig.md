@@ -3,18 +3,25 @@
 ### 🔀 **R1** (Default IPv4 Address-Family Enabled)
 ```bash
 router bgp 65100
- neighbor 10.12.1.2 remote-as 65200
+ bgp log-neighbor-changes
+ no bgp default ipv4-unicast
+ neighbor 10.12.1.2 remote-as 100
+ network 10.12.1.0 mask 255.255.255.0
+ network 192.168.1.1 mask 255.255.255.255
 ```
 ### 🔀 **R2** (Default IPv4 Address-Family Disabled)
 
 ```bash
 router bgp 65200
+ bgp log-neighbor-changes
  no bgp default ipv4-unicast
  neighbor 10.12.1.1 remote-as 65100
  !
  address-family ipv4
+ network 10.12.1.0 mask 255.255.255.0
+ network 192.168.2.2 mask 255.255.255.255
  neighbor 10.12.1.1 activate
- exit-address-family
+ exit-address-fami
 ```
 
 -----
