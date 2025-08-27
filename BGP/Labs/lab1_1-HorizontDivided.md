@@ -1,25 +1,38 @@
-# 🔹 Lab 1 – BGP Configuration & Validation
+# 🔹 Lab 1_1 – BGP Configuration & Validation
 We have a problem because I cannot see the all the routes, the reason is that BGP does nos show prefixs from IGP to EGP
 ## ⚙️ Configuration
 ### 🔀 **R60** 
 ```bash
+interface Loopback60
+ ip address 60.60.60.60 255.255.255.255
+!
+interface Loopback660
+ no ip address
+ ipv6 address 60::60/128
+!
+interface Ethernet0/0
+ ip address 192.168.113.60 255.255.255.0
+!
+interface Ethernet0/1
+ ip address 192.168.112.60 255.255.255.0
+!
 interface Ethernet0/2
- ip address 10.0.23.60 255.255.255.0
- ip ospf 100 area 0               <----
+ ip address 192.168.110.60 255.255.255.0
+ ipv6 address FE80::60:64:60 link-local
+ ipv6 address 2001:60:64::60/64
 !
 interface Ethernet0/3
- ip address 10.0.12.60 255.255.255.0
-!
-router ospf 100                 <----
- router-id 60.60.60.60          <----
+ ip address 192.168.117.60 255.255.255.0
+ ipv6 address FE80::61:60:60 link-local
+ ipv6 address 2001:61:60::60/64
 !
 router bgp 65201
  bgp router-id 60.60.60.60
  bgp log-neighbor-changes
  network 60.60.60.60 mask 255.255.255.255
- neighbor 10.0.12.61 remote-as 65200
- neighbor 10.0.23.64 remote-as 65201
- neighbor 10.0.34.63 remote-as 65201         <----
+ neighbor 192.168.110.64 remote-as 65201
+ neighbor 192.168.111.63 remote-as 65201
+ neighbor 192.168.117.61 remote-as 65200
 ```
 ### 🔀 **R64** 
 ```bash
