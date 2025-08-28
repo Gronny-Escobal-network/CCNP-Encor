@@ -131,6 +131,6 @@ R62#sh ip bgp
 
 ## 🖧 Topology
 
-![Lab 1 Topology](../Diagrams/Screenshot_3.png)
+![Lab 1 Topology](../Diagrams/lab3.png)
 
 -----
