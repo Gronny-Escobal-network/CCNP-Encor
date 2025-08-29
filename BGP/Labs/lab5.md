@@ -1,5 +1,11 @@
 # 🔹 Lab 2 – BGP Configuration & Validation
 I am going to move all the traffic using the weigh thought R63
+🔹 in (Inbound)
+Se refiere a rutas que entran a tu router desde el vecino BGP.
+Todo lo que el vecino te anuncia pasa por el route-map antes de entrar en tu tabla BGP local.
+🔹 out (Outbound)
+Se refiere a rutas que salen de tu router hacia el vecino BGP.
+Todo lo que tú anuncias al vecino se filtra o modifica antes de enviarse.
 ## ⚙️ Configuration
 ### 🔀 **R58** 
 ```bash
