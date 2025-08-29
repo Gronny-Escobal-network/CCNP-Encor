@@ -5,7 +5,7 @@
 router bgp 65100
  bgp log-neighbor-changes
  no bgp default ipv4-unicast
- neighbor 10.12.1.2 remote-as 100
+ neighbor 10.12.1.2 remote-as 65200
  network 10.12.1.0 mask 255.255.255.0
  network 192.168.1.1 mask 255.255.255.255
 ```
