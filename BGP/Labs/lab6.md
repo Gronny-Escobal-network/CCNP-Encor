@@ -157,6 +157,6 @@ R64#sh ip bgp
 
 ## 🖧 Topology
 
-![Lab 6 Topology](../Diagrams/bgp.png)
+![Lab 6 Topology](../Diagrams/bgp6.png)
 
 -----
