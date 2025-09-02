@@ -2,6 +2,8 @@
 ### Before (first sh ip bgp): 
 For the networks 192.168.2.0/27 and 192.168.2.64/26 there were three valid entries each, with Next Hop 10.1.3.130 and 10.1.3.3 (neighbors on the interface toward R3) and 10.1.2.2 (neighbor toward R2). The *> (best) was already pointing to 10.1.2.2 (R2), but R3 was also advertising those networks (that’s why you see the lines with 10.1.3.3/10.1.3.130).
 
+In this part of the lab, the goal is to manipulate BGP advertisements using an ACL + distribute-list, so that R3 only advertises to R1 the networks that really belong to ASN300, and not the ones from ASN200 that it was also propagating.
+
 ### After (after clear ip bgp * so): 
 the entries from R3 for the 192.168.2.x networks disappeared; now only the route via 10.1.2.2 (R2) remains as valid and best (*>).
 For the networks 192.168.3.0/27 and 192.168.3.64/26 the entries from R3 (10.1.3.3 / 10.1.3.130) are still appearing, because those are the own networks of AS300 and must continue to be advertised by R3.
