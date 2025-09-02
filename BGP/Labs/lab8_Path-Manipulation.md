@@ -1,4 +1,7 @@
 # 🔹 Lab 8 – BGP Configuration & Validation
+
+In R1 you configured a prefix-list to filter the routes received from R2 (ASN5000). Before the filter, R2 was not only sending its own networks (192.168.2.0/27 and 192.168.2.64/26), but also routes that actually belonged to ASN3000, which appeared in the BGP table with the sequence 5000 3000. After applying the prefix-list ALLOWED_FROM_R2 with the in direction, R1 now only accepts networks directly originated in ASN5000 and discards those that R2 was propagating from ASN3000. In the new BGP table, only the routes with ASN5000 as the origin appear, confirming that the filter is working properly.
+
 ## ⚙️ Configuration
 ### 🔀 **R1** 
 ```bash
