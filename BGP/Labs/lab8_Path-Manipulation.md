@@ -13,12 +13,12 @@ router bgp 1000
   network 192.168.1.0 mask 255.255.255.224
   network 192.168.1.64 mask 255.255.255.192
   neighbor 10.1.2.2 activate
-  neighbor 10.1.2.2 prefix-list ALLOWED_FROM_R2 in
+  neighbor 10.1.2.2 prefix-list ALLOWED_FROM_R2 in           ✅
   neighbor 10.1.3.3 activate
   neighbor 10.1.3.130 activate
  exit-address-family
 !
-ip prefix-list ALLOWED_FROM_R2 seq 5 permit 192.168.2.0/24 le 27
+ip prefix-list ALLOWED_FROM_R2 seq 5 permit 192.168.2.0/24 le 27       ✅
 ```
 
 -----
