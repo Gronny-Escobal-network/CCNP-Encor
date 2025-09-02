@@ -1,4 +1,4 @@
-# 🔹 Lab 2 – BGP Configuration & Validation
+# 🔹 Lab 8 – BGP Configuration & Validation
 ## ⚙️ Configuration
 ### 🔀 **R1** 
 ```bash
