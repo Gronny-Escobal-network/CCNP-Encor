@@ -1,4 +1,7 @@
 # 🔹 Lab 9 – BGP Configuration & Validation
+
+In this step, you configured on R1 an AS-PATH ACL to control which routes are advertised to R2 (ASN500). Before applying the filter, R1 was sending not only its own networks (ASN6500), but also prefixes learned from other ASes (like ASN300), which made ASN6500 act as a transit AS, an undesirable scenario. To prevent this, an AS-PATH access list was created with ^$, which means “only locally originated routes” (no other AS in the path). Then, this filter was applied in the out direction toward the neighbor R2. With this, R1 only advertises to R2 the networks that actually belong to ASN6500, discarding external routes. When checking on R2, the BGP table shows that now all prefixes with ASN6500 originate only in ASN6500, confirming that the filter works correctly.
+
 ## ⚙️ Configuration
 ### 🔀 **Q1** 
 ```bash
