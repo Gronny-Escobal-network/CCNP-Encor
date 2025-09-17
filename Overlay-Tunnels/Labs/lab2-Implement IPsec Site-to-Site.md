@@ -43,7 +43,7 @@ crypto map S2S-CMAP 10 ipsec-isakmp
  set security-association lifetime seconds 900
 exit
 
-interface g0/0/0
+interface gi1
  crypto map S2S-CMAP
 end
 ```
@@ -77,7 +77,7 @@ crypto map S2S-CMAP 10 ipsec-isakmp
  set security-association lifetime seconds 900
 exit
 
-interface g0/0/0
+interface gi3
  crypto map S2S-CMAP
 end
 ```
