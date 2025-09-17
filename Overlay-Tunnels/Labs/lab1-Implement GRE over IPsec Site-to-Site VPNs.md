@@ -24,7 +24,7 @@ crypto map GRE-CMAP 10 ipsec-isakmp
  set peer 64.100.1.2
 exit
 
-interface g0/0/0
+interface gi1
  crypto map GRE-CMAP
 exit
 
@@ -85,7 +85,7 @@ end
 show interfaces tunnel 1
 show crypto session
 show ip ospf interface brief
-```
 show ip ospf neighbor
 show ip route ospf | begin Gateway
 show ip route 172.16.0.0
+```
