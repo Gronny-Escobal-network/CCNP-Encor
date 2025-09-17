@@ -1,10 +1,17 @@
 ✅Step 1: Configurar la política ISAKMP (Phase 1) en R1 y R3.
+
 ✅Step 2: Configurar la pre-shared key entre R1 y R3.
+
 ✅Step 3: Crear el transform-set (Phase 2) para definir cifrado y hash.
+
 ✅Step 4: Ajustar el lifetime de la Security Association.
+
 ✅Step 5: Configurar el ACL de tráfico interesante (qué redes viajan por el túnel).
+
 ✅Step 6: Crear y aplicar el crypto map con peer, transform-set y ACL.
+
 ✅Step 7: Aplicar el crypto map a la interfaz de salida (g0/0/0 en ambos routers).
+
 ✅Step 8: Verificar el túnel con comandos de ISAKMP, IPsec y OSPF.
 ### R1 CONFIGURATION
 ```bash
