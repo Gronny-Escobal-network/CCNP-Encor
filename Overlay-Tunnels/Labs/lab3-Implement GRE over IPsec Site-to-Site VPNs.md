@@ -1,3 +1,15 @@
+1️⃣ Configurar direcciones IP en PC1 y PC3 + default gateways.
+
+2️⃣ Verificar conectividad básica (ping PC1 → PC3, loopback en D3, y gateway en R2).
+
+3️⃣ Revisar tablas de enrutamiento OSPF en R1 y R3 → solo tienen sus rutas locales.
+
+4️⃣ Configurar GRE over IPsec en R1 usando crypto maps (ISAKMP, pre-shared key, transform set en modo transport, ACL GRE, crypto map, aplicar en interfaz, crear tunnel).
+
+5️⃣ Configurar GRE over IPsec en R3 usando IPsec profiles (ISAKMP, pre-shared key, transform set, perfil IPsec, aplicar en interfaz Tunnel1).
+
+6️⃣ Habilitar OSPF en el túnel (R1 y R3) para que se propaguen rutas dinámicamente.
+
 ### R1 CONFIGURATION (GRE over IPsec using Crypto Map)
 ```bash
 crypto isakmp policy 10
